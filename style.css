@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+#periodicTable {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.element {
+  padding: 10px;
+  border-radius: 10px;
+  background: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.element:hover {
+  background: #555;
+}
+
+.element .symbol {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.element .number {
+  font-size: 12px;
+  text-align: left;
+}
+
+.element.nonmetal { background: #2a9d8f; }
+.element.noblegas { background: #e76f51; }
+.element.metal { background: #f4a261; }
+.element.metalloid { background: #e9c46a; }
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #222;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: left;
+  color: #fff;
+}
+
+#closeModal {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}

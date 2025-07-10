@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Periodic Table</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>This is it </h1>
+
+  <h1>🧪 Interactive Periodic Table</h1>
+  
+  <input type="text" id="searchInput" placeholder="Search element by name or symbol">
+
+  <div id="periodicTable"></div>
+
+  <!-- Modal for Element Details -->
+  <div id="elementModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2 id="elementName"></h2>
+      <p><strong>Symbol:</strong> <span id="elementSymbol"></span></p>
+      <p><strong>Atomic Number:</strong> <span id="elementNumber"></span></p>
+      <p><strong>Atomic Weight:</strong> <span id="elementWeight"></span></p>
+      <p><strong>Category:</strong> <span id="elementCategory"></span></p>
+      <p><strong>Description:</strong> <span id="elementDescription"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
